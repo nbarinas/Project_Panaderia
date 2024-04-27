@@ -10,7 +10,11 @@
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "react-router-dom": "^6.23.0",
+<<<<<<< HEAD
     "react-scripts": "^5.0.1",
+=======
+    "react-scripts": "5.0.1",
+>>>>>>> d9d1c08a7d9695dc23c8a91836c90739e7c7f916
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -36,8 +40,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+=======
+>>>>>>> d9d1c08a7d9695dc23c8a91836c90739e7c7f916
   }
 }
