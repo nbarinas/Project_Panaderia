@@ -17,7 +17,7 @@ function App() {
           {/* Aquí puedes agregar más rutas */}
         </Routes>
         <Footer /> {/* Mostrar el componente Footer en todas las páginas */}
-        <Carousel/>
+
       </div>
     </Router>
   );
