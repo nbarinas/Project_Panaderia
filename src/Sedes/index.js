@@ -6,7 +6,6 @@ const urlsMapas = [
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d129922.95627889782!2d-74.24708647506237!3d4.676318523131498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f995fc2cc3269%3A0x34eca4efa8f5b2ff!2sHornitos%20Am%C3%A9ricas!5e0!3m2!1ses!2sco!4v1715220279736!5m2!1ses!2sco",
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d129922.95627889782!2d-74.24708647506237!3d4.676318523131498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bd1fe336ce3%3A0x7727838965e506a2!2sHornitos%20Santa%20B%C3%A1rbara!5e0!3m2!1ses!2sco!4v1715220309248!5m2!1ses!2sco",
 ];
-
 const Sedes = () => {
   const [urlMapa, setUrlMapa] = useState(urlsMapas[0]);
   const cambiarUrl = (sede) => {
@@ -34,7 +33,7 @@ const Sedes = () => {
     setUrlMapa(nuevaUrl);
   };
   return (
-    <div className="container">
+    <div className="container-fluid bg-warning">
       <div className="row">
         <div className="col-md-8">
           <h2>Sedes</h2>
@@ -108,5 +107,4 @@ const Sedes = () => {
     </div>
   );
 };
-
 export default Sedes;
