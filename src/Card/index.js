@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto bg-warning pb-3">
       <div class="col">
         <div class="card h-100">
           <img src="card1.jpg" class="card-img-top" alt="..." />
@@ -15,11 +15,11 @@ const Card = () => {
             </p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Precio: $1.000 a $10.000</small>
+            <small class="text-muted fw-bold">Precio: $1.000 a $10.000</small>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div className="col">
         <div class="card h-100">
           <img src="card2.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
@@ -32,7 +32,7 @@ const Card = () => {
             </p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Precio: $20.000 a $100.000</small>
+            <small class="text-muted fw-bold">Precio: $20.000 a $100.000</small>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@ const Card = () => {
             </p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Precio: $1.000 a $10.000</small>
+            <small class="text-muted fw-bold">Precio: $1.000 a $10.000</small>
           </div>
         </div>
       </div>

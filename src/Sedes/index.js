@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 const titulos = ["Centro", "Cedritos", "Suba", "Soacha"];
 
 const Sedes = () => {
   return (
-    <div className="container">
+    <div className="container-fluid bg-warning">
       <div className="row">
         <div className="col-md-8">
           <h2>Sedes</h2>
