@@ -3,64 +3,66 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const Carousel = () => {
   return (
-    <div className="bg-warning">
-      <h1 className="text-center color-pink">Le Grenier à Pain</h1>
+    
       <div
-        id="carouselExampleFade"
-        className="carousel slide carousel-fade"
+        id="carouselExampleInterval"
+        className="carousel slide"
         data-bs-ride="carousel"
       >
-        <div className="carousel-inner mb-3">
-          <div className="carousel-item active">
-            {
-              <img
-                src="mae-mu.jpg"
-                className=" rounded d-block  mx-auto img-item"
-                alt="panadero2"
-              />
-            }
+        <div className="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div className="carousel-inner carousel-img-size">
+          <div className="carousel-item active" data-bs-interval="3000">
+            <img src="mae-mu.jpg" className="d-block vw-100 vh-100" alt="..." />
           </div>
-          <div className="carousel-item">
-            <img
-              src="nadya.jpg"
-              className=" rounded d-block  mx-auto img-item"
-              alt="panadero"
-            />
+          <div className="carousel-item" data-bs-interval="3000">
+            <img src="nadya.jpg" className="d-block w-100 vh-100" alt="..." />
           </div>
-          <div className="carousel-item">
-            <img
-              src="yeh.jpg"
-              className=" rounded d-block  mx-auto img-item"
-              alt="panaderia 2"
-            />
+          <div className="carousel-item" data-bs-interval="3000">
+            <img src="yeh.jpg" className="d-block w-100 vh-100" alt="..." />
           </div>
         </div>
         <button
-          className="carousel-control-prev btn-dark"
+          className="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleFade"
+          data-bs-target="#carouselExampleInterval"
           data-bs-slide="prev"
         >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
           className="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleFade"
+          data-bs-target="#carouselExampleInterval"
           data-bs-slide="next"
         >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+
+      
   );
 };
 
