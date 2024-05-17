@@ -6,6 +6,7 @@ import Card from "./Card";
 import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Sedes from "./Sedes";
+import Tienda from "./Tienda";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Carousel />  
         <Card />
         <Sedes />
+        <Tienda/>
         <Footer /> {/* Mostrar el componente Footer en todas las páginas */}
       </div>
     </Router>
