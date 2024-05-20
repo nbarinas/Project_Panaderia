@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Registro = () => {
   const [mostrarFormulario, setMostrarForm] = useState(false);
@@ -102,7 +102,7 @@ const Registro = () => {
     </div>
   );
 };
-
+{/* 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-warning">
@@ -129,9 +129,58 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div>∏
     </nav>
   );
-};
+}; */}
+
+const NavBar = () => {
+  const activeStyle = "underline font-semibold text-yellow-900"
+  const notActiveStyle = "no-underline text-yellow-900"   
+  return(
+    <nav className='flex justify-center items-center fixed z-10 w-full py-4 px-8 text-sm font-light bg-yellow-100'>
+      <ul className='flex items-center gap-3 '>
+        <li>
+          <NavLink to='/' 
+            className={({ isActive }) => 
+            isActive ? activeStyle : notActiveStyle
+          }>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/Sedes'
+          className={({ isActive }) => 
+            isActive ? activeStyle : notActiveStyle
+          }>
+            Sedes
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/Menu'
+          className={({ isActive }) => 
+            isActive ? activeStyle : notActiveStyle
+          }>
+            Menu
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/MyOrder'
+          className={({ isActive }) => 
+            isActive ? activeStyle : notActiveStyle
+          }>
+            Tu Orden
+          </NavLink>
+        </li>
+        <li>
+          <Registro/>
+        </li>
+        <li>
+          🛒 0
+        </li>
+      </ul>
+    </nav>
+  )
+}
 
 export default NavBar;

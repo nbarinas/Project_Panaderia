@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 const titulosMenu = ["Panadería", "Bebidas", "Postres"];
 const titulosCards = ["Galleta", "Pastel", "Macarons"]
-const Tienda = () => {
+const Menu = () => {
   return (
     <div>
       <div
@@ -57,4 +57,4 @@ const Tienda = () => {
     </div>
   );
 };
-export default Tienda;
+export default Menu;
