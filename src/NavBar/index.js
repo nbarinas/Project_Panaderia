@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand text-white" href="#">
+        <a className="navbar-brand fs-3 text-white" href="#">
           Le Grenier à Pain
         </a>
         <button
@@ -20,14 +19,11 @@ const NavBar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div
-          className="collapse navbar-collapse position-absolute top-0 start-50 translate-middle-x"
-          id="navbarNav"
-        >
-          <ul className="navbar-nav">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav flex-grow-1 pe-3 fs-3 justify-content-center">
             <li className="nav-item">
               <a
-                className="nav-link active text-white"
+                className="nav-link mx-lg-2 active text-white"
                 aria-current="page"
                 href="#"
               >
@@ -50,6 +46,9 @@ const NavBar = () => {
               </a>
             </li>
           </ul>
+          <button type="submit" class="btn btn-primary">
+            Inicia sesión
+          </button>
         </div>
       </div>
     </nav>
