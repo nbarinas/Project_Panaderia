@@ -22,6 +22,7 @@ code {
   position: fixed;
   bottom: 80px;
   right: 50px; 
+  text-decoration: none;
 }
 
 .navbar-brand {
