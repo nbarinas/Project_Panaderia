@@ -1,24 +1,28 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./NavBar";
-import Carousel from "./Carousel";
-import Card from "./Card";
-import Footer from "./Footer";
+import { BrowserRouter as Router, Routes, Route, useRoutes, BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Sedes from "./Sedes";
+import Tienda from "./Menu";
+import Home from "./Home";
+import MyOrder from "./MyOrder";
+import NavBar from "./NavBar";
 
-function App() {
-  return (
-    <Router>
-      <div>
-        <Navbar /> {/* Mostrar el componente Navbar en todas las páginas */}
-        <Carousel />  
-        <Card />
-        <Sedes />
-        <Footer /> {/* Mostrar el componente Footer en todas las páginas */}
-      </div>
-    </Router>
-  );
+const AppRoutes = () =>{
+  let routes = useRoutes([
+    {path: '/',element: <Home/>},
+    {path: '/Menu',element: <Tienda/>},
+    {path: '/MyOrder',element: <MyOrder/>},
+    {path: '/Sedes',element: <Sedes/>}
+  ])
+    return routes
 }
-
+const App = () => {
+  return (
+    <BrowserRouter>
+      <NavBar></NavBar>
+      <AppRoutes></AppRoutes>
+      
+    </BrowserRouter>
+  )
+}
 export default App;
