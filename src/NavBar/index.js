@@ -105,14 +105,36 @@ const Registro = () => {
 {/* 
 const NavBar = () => {
   return (
+    <nav className="navbar navbar-expand-lg fixed-top">
     <nav className="navbar navbar-expand-lg navbar-light bg-warning">
       <div className="container-fluid">
+        <a className="navbar-brand fs-3 text-white" href="#">
+          Le Grenier à Pain
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav flex-grow-1 pe-3 fs-3 justify-content-center">
+        <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
+              <a
+                className="nav-link mx-lg-2 active text-white"
+                aria-current="page"
+                href="#"
+              >
+                Inicio
+              </a>
               <Link className="nav-link active" aria-current="page" to="/">Pagina Principal</Link>
             </li>
             <li className="nav-item">
@@ -128,6 +150,9 @@ const NavBar = () => {
               <Registro />
             </li>
           </ul>
+          <button type="submit" class="btn btn-primary">
+            Inicia sesión
+          </button>
         </div>
       </div>∏
     </nav>
