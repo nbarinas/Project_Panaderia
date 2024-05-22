@@ -30,7 +30,7 @@ app.post("/create", (req, res) => {
     db.query("INSERT INTO usuarios SET ?", newUser, (err, result) => {
         if (err) {
             console.error("Error inserting user into the database:", err);
-            res.status(500).send("Error registering user");
+            res.status(500).send("Error  registering user");
         } else {
             res.send("Usuario registrado");
         }
