@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Layout from "../Layout";
 const urlsMapas = [
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127243.06908047838!2d-74.24355621564197!3d4.7098385884310074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85ab1e8a0579%3A0x6c137c06b4958b64!2sHornitos%20Quirigua!5e0!3m2!1ses!2sco!4v1715217832143!5m2!1ses!2sco",
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127247.12887666514!2d-74.23050995099354!3d4.687597608668757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b9ac3b53a93%3A0x88f52bb82823ef41!2sHornitos%20Modelia!5e0!3m2!1ses!2sco!4v1715217949661!5m2!1ses!2sco",
@@ -33,78 +34,80 @@ const Sedes = () => {
     setUrlMapa(nuevaUrl);
   };
   return (
-    <div className="container-fluid bg-warning">
-      <div className="row">
-        <div className="col-md-8">
-          <h2>Sedes</h2>
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">
-              <button
-                onClick={() => cambiarUrl("Centro")}
-                type="button"
-                class="btn btn-outline-none"
-              >
-                Centro
-              </button>
-            </li>
-            <li className="list-group-item">
-              <button
-                onClick={() => cambiarUrl("Chapinero")}
-                type="button"
-                class="btn btn-outline-none"
-              >
-                Chapinero
-              </button>
-            </li>
-            <li className="list-group-item">
-              <button
-                onClick={() => cambiarUrl("Suba")}
-                type="button"
-                class="btn btn-outline-none"
-              >
-                Suba
-              </button>
-            </li>
-            <li className="list-group-item">
-              <button
-                onClick={() => cambiarUrl("Salitre")}
-                type="button"
-                class="btn btn-outline-none"
-              >
-                Salitre
-              </button>
-            </li>
-            <li className="list-group-item">
-              <button
-                onClick={() => cambiarUrl("Bosa")}
-                type="button"
-                class="btn btn-outline-none"
-              >
-                Bosa
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div className="col-md-4">
-          <div className="card p-3">
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-            </div>
-            <div className="ratio ratio-1x1">
-              <iframe
-                title="Mapa sedes"
-                src={urlMapa}
-                width="600"
-                height="450"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+    <Layout>
+      <div className="container-fluid bg-warning">
+        <div className="row">
+          <div className="col-md-8">
+            <h2>Sedes</h2>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">
+                <button
+                  onClick={() => cambiarUrl("Centro")}
+                  type="button"
+                  class="btn btn-outline-none"
+                >
+                  Centro
+                </button>
+              </li>
+              <li className="list-group-item">
+                <button
+                  onClick={() => cambiarUrl("Chapinero")}
+                  type="button"
+                  class="btn btn-outline-none"
+                >
+                  Chapinero
+                </button>
+              </li>
+              <li className="list-group-item">
+                <button
+                  onClick={() => cambiarUrl("Suba")}
+                  type="button"
+                  class="btn btn-outline-none"
+                >
+                  Suba
+                </button>
+              </li>
+              <li className="list-group-item">
+                <button
+                  onClick={() => cambiarUrl("Salitre")}
+                  type="button"
+                  class="btn btn-outline-none"
+                >
+                  Salitre
+                </button>
+              </li>
+              <li className="list-group-item">
+                <button
+                  onClick={() => cambiarUrl("Bosa")}
+                  type="button"
+                  class="btn btn-outline-none"
+                >
+                  Bosa
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-4">
+            <div className="card p-3">
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+              </div>
+              <div className="ratio ratio-1x1">
+                <iframe
+                  title="Mapa sedes"
+                  src={urlMapa}
+                  width="600"
+                  height="450"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 export default Sedes;
