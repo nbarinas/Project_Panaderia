@@ -6,6 +6,7 @@ import Tienda from "./Menu";
 import Home from "./Home";
 import MyOrder from "./MyOrder";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const AppRoutes = () =>{
   let routes = useRoutes([
@@ -21,7 +22,7 @@ const App = () => {
     <BrowserRouter>
       <NavBar></NavBar>
       <AppRoutes></AppRoutes>
-      
+      <Footer/>
     </BrowserRouter>
   )
 }
