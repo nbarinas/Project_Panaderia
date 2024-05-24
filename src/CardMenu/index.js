@@ -4,15 +4,15 @@ return(
         <figure className="relative mb-2 w-full h-4/5 justify-center" >
             <img 
                 className="w-full h-full object-cover rounded-lg"
-                src="{data.image}" alt="Brownie"></img>
+                src={data.data.image} alt={data.data.title}></img>
             <button className="absolute top-0 right-0 flex justify-center items-center w-6 h-6 rounded-full m-2 bg-white">+</button>
         </figure>
         <p className="flex justify-between mx-2">
-            <span className="text-sm font-light">
-                {data.title}
+            <span className="text-sm font-light truncate">
+                {data.data.title}
             </span>
             <span className="text-lg font-medium">
-                {data.price}
+                ${data.data.price}
             </span>
         </p>
     </div>

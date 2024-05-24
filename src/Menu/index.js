@@ -14,11 +14,13 @@ const Menu = () => {
 
   return (
     <Layout>
-      {
-        items?.map(() =>(
-          <CardMenu />
-        ))
-      }
+      <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3 w-full max-w-screen-lg">
+        {
+          items?.map(item =>(
+            <CardMenu key={item.id} data={item} />
+          ))
+        }
+      </div>
     </Layout>
   );
 };
