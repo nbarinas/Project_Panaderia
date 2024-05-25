@@ -6,14 +6,14 @@ const NavBar = () => {
   const [mostrarFormulario, setMostrarForm] = useState(false);
   const [datos, setDatos] = useState({
     email: "",
-    contraseña: "",
-    usuario: ""
+    usuario: "",
+    contrasena: "",
   });
 
   const add = () => {
-    axios.post("http://localhost:3001/create", { // Cambiado de Axios a axios
+    axios.post("http://localhost:3001/create", {
       email: datos.email,
-      contrasena: datos.contraseña, // Cambiado de contraseña a contrasena
+      contrasena: datos.contrasena,
       usuario: datos.usuario
     }).then(() => {
       alert("Usuario creado con éxito");
@@ -35,7 +35,7 @@ const NavBar = () => {
 
   const enviarDatos = (cambio) => {
     cambio.preventDefault();
-    console.log(`${datos.email} ${datos.contraseña} ${datos.usuario}`);
+    console.log(`${datos.email} ${datos.contrasena} ${datos.usuario}`);
   };
 
   const activeStyle = "underline font-semibold text-yellow-900";
@@ -101,7 +101,7 @@ const NavBar = () => {
                     autoCapitalize='on'
                     required
                     type='password'
-                    name="contraseña"
+                    name="contrasena"
                     className="form-control"
                     onChange={entradaCambioManual}
                     style={{ width: '200px' }}
