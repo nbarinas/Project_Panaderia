@@ -11,7 +11,7 @@ const MyOrder = () => {
 
   // Verifica si no hay elementos en el carrito y muestra un mensaje
   if (cartItems.length === 0) {
-    return <div style={{ marginTop: '10px', textAlign: 'center' }}>No tienes nada agregado a tu orden.</div>;
+    return <div style={{ marginTop: '100px', textAlign: 'center' }}>No tienes nada agregado a tu orden.</div>;
   }
 
   return (

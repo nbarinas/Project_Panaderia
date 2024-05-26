@@ -66,8 +66,9 @@ const NavBar = () => {
             <form className="form-signin" onSubmit={enviarDatos} style={{ textAlign: 'center' }}>
               <div className="d-flex justify-content-center mb-3">
                 <div className="mx-2">
-                  <label style={{ display: 'block' }}>Correo</label>
+                  <label htmlFor="email" style={{ display: 'block' }}>Correo</label>
                   <input
+                    id="email"
                     placeholder='Correo'
                     autoFocus
                     autoCorrect='on'
@@ -82,8 +83,9 @@ const NavBar = () => {
                   />
                 </div>
                 <div className="mx-2">
-                  <label style={{ display: 'block' }}>Contraseña</label>
+                  <label htmlFor="contrasena" style={{ display: 'block' }}>Contraseña</label>
                   <input
+                    id="contrasena"
                     placeholder='Contraseña'
                     autoCorrect='on'
                     autoComplete='on'
@@ -97,8 +99,9 @@ const NavBar = () => {
                   />
                 </div>
                 <div className="mx-2">
-                  <label style={{ display: 'block' }}>Usuario</label>
+                  <label htmlFor="usuario" style={{ display: 'block' }}>Usuario</label>
                   <input
+                    id="usuario"
                     placeholder='Usuario'
                     autoCorrect='on'
                     autoComplete='on'
