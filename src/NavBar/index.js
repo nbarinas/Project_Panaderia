@@ -1,26 +1,15 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import axios from 'axios'; // Cambiado de Axios a axios
+import { useCart } from '../CartContext/'; // Importa el contexto del carrito
 
 const NavBar = () => {
+  const { cartItemCount } = useCart(); // Obtiene el cartItemCount del contexto
   const [mostrarFormulario, setMostrarForm] = useState(false);
   const [datos, setDatos] = useState({
-    email: "",
-    usuario: "",
-    contrasena: "",
+    email: '',
+    usuario: '',
+    contrasena: '',
   });
-
-  const add = () => {
-    axios.post("http://localhost:3001/create", {
-      email: datos.email,
-      contrasena: datos.contrasena,
-      usuario: datos.usuario
-    }).then(() => {
-      alert("Usuario creado con éxito");
-    }).catch(error => {
-      console.error('Error al crear usuario:', error);
-    });
-  };
 
   const desplegaForm = () => {
     setMostrarForm(!mostrarFormulario);
@@ -38,8 +27,8 @@ const NavBar = () => {
     console.log(`${datos.email} ${datos.contrasena} ${datos.usuario}`);
   };
 
-  const activeStyle = "underline font-semibold text-yellow-900";
-  const notActiveStyle = "no-underline text-yellow-900";
+  const activeStyle = 'underline font-semibold text-yellow-900';
+  const notActiveStyle = 'no-underline text-yellow-900';
 
   return (
     <nav className='flex flex-col items-center fixed top-0 z-10 w-full py-4 px-8 text-sm font-light bg-yellow-100'>
@@ -68,7 +57,7 @@ const NavBar = () => {
           <button onClick={desplegaForm} className="nav-link">Registro</button>
         </li>
         <li>
-          🛒 0
+          <span role="img" aria-label="Carrito">🛒</span> {cartItemCount} {/* Mostrar la cantidad de artículos en el carrito */}
         </li>
       </ul>
       {mostrarFormulario && (
@@ -123,7 +112,7 @@ const NavBar = () => {
                   />
                 </div>
               </div>
-              <button type="submit" onClick={add} className="btn btn-danger" style={{ display: 'block', margin: '0 auto' }}>
+              <button type="submit" className="btn btn-danger" style={{ display: 'block', margin: '0 auto' }}>
                 Registrarse
               </button>
             </form>
