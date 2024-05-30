@@ -8,11 +8,18 @@ const Menu = () => {
 
   const [items, setItems] = useState(null);
 
+  // useEffect(() => {
+  //   fetch("https://fakestoreapi.com/products")
+  //     .then((response) => response.json())
+  //     .then((data) => setItems(data));
+  // }, []);
+
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://jdmed.github.io/api-menu/menu.json")
       .then((response) => response.json())
       .then((data) => setItems(data));
   }, []);
+  
 
   return (
     <Layout>
