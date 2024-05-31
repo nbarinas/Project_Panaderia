@@ -1,133 +1,162 @@
 import React from "react";
-import {FaFacebook,FaWhatsapp,FaInstagram,FaLinkedin,FaGithub} from 'react-icons/fa'
+import {
+  FaFacebook,
+  FaWhatsapp,
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className=" text-center text-lg-start text-muted bg-warning text-decoration-none">
-        {/* Section: Social media */}
-        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom icon-redes ">
-          {/* Left */}
-          <div className="me-5 d-none d-lg-block fw-bold fs-4 ">
-            <span></span>
-          </div>
-          {/* Left */}
-          {/* Right */}
-          <div>
-            <FaWhatsapp style={{color:'#25d366',fontSize:'2em',margin:'10px'}} />
-            <FaFacebook style={{color: '#3b5998',fontSize: '2em',margin:'10px'}}/>
-             <FaLinkedin style={{ color:'#00b5',fontSize: '2em',margin:'10px' }}/>
-             <FaInstagram style={{color:'#E4405F',fontSize:'2em',margin:'10px' }}/>
-            <FaGithub style={{color:'#333',fontSize:'2em',margin:'10px' }}/>
+    <footer className="bg-dark text-white text-center">
+      {/* Section: Social media */}
+      <section
+        className="p-4 border-bottom"
+        style={{ backgroundColor: "#ffffff", Height: "180px" }}
+      >
+        {/* Left */}
+        <div className="d-flex justify-content align-items  mb-4">
+          <div className="me-4">
+            <span className="fw-bold fs-4" style={{ color: "#E1B16A" }}>
+              Siguenos en:
+            </span>
           </div>
           {/* Right */}
-        </section>
-        {/* Section: Social media */}
-
-        {/* Section: Links  */}
-        <section className="">
-          <div className="container text-center text-md-start mt-5">
-            {/* Grid row */}
-            <div className="row mt-3">
-              {/* Grid column */}
-              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                {/* Content */}
-                <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-gem me-3"></i>Le Grenier à Pain
-                </h6>
-                <p>Le vendemos desde un pan hasta la panaderia</p>
-              </div>
-              {/* Grid column */}
-
-              {/* Grid column */}
-              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* Links */}
-                <h6 className="text-uppercase fw-bold mb-4">Productos</h6>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Panes
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Tortas
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Postres
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Pasteles
-                  </a>
-                </p>
-              </div>
-              {/* Grid column */}
-
-              {/* Grid column */}
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* Links */}
-                <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Pagina Principal
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Especialiades
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Precios
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Domicilios
-                  </a>
-                </p>
-              </div>
-              {/* Grid column */}
-
-              {/* Grid column */}
-              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                {/* Links */}
-                <h6 className="text-uppercase fw-bold mb-4">
-                  Nuestros contactos
-                </h6>
-                <p>
-                  <i className="fas fa-home me-3"></i> Barrio San jose, Bogota
-                </p>
-                <p>
-                  <i className="fas fa-envelope me-3"></i>
-                  info@example.com
-                </p>
-                <p>
-                  <i className="fas fa-phone me-3"></i> + 57 313 662 3813
-                </p>
-                {/* <p><i className="fas fa-print me-3"></i> + 01 234 567 89</p> */}
-              </div>
-              {/* Grid column */}
-            </div>
-            {/* Grid row */}
+          <div className="d-flex align-items-center">
+            <FaWhatsapp
+              className="icon me-4"
+              style={{ color: "#25D366", fontSize: "24px" }}
+            />
+            <FaFacebook
+              className="icon me-4"
+              style={{ color: "#3b5998", fontSize: "24px" }}
+            />
+            <FaLinkedin
+              className="icon me-4"
+              style={{ color: "#0e76a8", fontSize: "24px" }}
+            />
+            <FaInstagram
+              className="icon me-4"
+              style={{ color: "#c13584", fontSize: "24px" }}
+            />
+            <FaGithub
+              className="icon me-4"
+              style={{ color: "#4078c0", fontSize: "24px" }}
+            />
           </div>
-        </section>
-        {/* Section: Links  */}
-
-        {/* Copyright */}
-        <div
-          className="text-center p-4"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
-        >
-          © 2024 Derechos Reservados
+          {/* Right */}
         </div>
-        {/* Copyright */}
-      </footer>
-    </div>
+      </section>
+
+      {/* Section: Social media */}
+
+      {/* Section: Links  */}
+      <section className="p-4" style={{ backgroundColor: "#EAD2AC " }}>
+        <div className="container">
+          <div className="row">
+            {/* Grid column */}
+            <div className="col-md-3 mb-4">
+              <h6 className="text-uppercase mb-4">Le Grenier à Pain</h6>
+              <p
+                className=" "
+                style={{
+                  color: "#8B4513  ",
+                  fontSize: "1.2em",
+                  fontWeight: "bold",
+                }}
+              >
+                🥖Le vendemos desde un pan hasta la panadería🥖
+              </p>
+            </div>
+            {/* Grid column */}
+
+            {/* Grid column */}
+            <div className="col-md-3 mb-4">
+              <h6 className="text-uppercase mb-4">Productos</h6>
+              <p>
+                <a href="#!" className="text-dark text-decoration-none">
+                  Panes
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-dark text-decoration-none">
+                  Tortas
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-dark text-decoration-none">
+                  Postres
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-dark text-decoration-none">
+                  Pasteles
+                </a>
+              </p>
+            </div>
+            {/* Grid column */}
+
+            {/* Grid column */}
+            <div className="col-md-3 mb-4">
+              <h6 className="text-uppercase mb-4">Enlaces útiles</h6>
+              <p>
+                <a href="#!" className="text-dark text-decoration-none">
+                  Página Principal
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-dark text-decoration-none">
+                  Especialidades
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-dark text-decoration-none">
+                  Precios
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-dark text-decoration-none">
+                  Domicilios
+                </a>
+              </p>
+            </div>
+            {/* Grid column */}
+
+            {/* Grid column */}
+            <div className="col-md-3 mb-4">
+              <h6 className="text-uppercase mb-4">Nuestros contactos</h6>
+              <p>
+                <i href="#!" className="text-dark text-decoration-none">
+                  Barrio San José, Bogotá
+                </i>
+              </p>
+              <p>
+                <i href="#!" className="text-dark text-decoration-none">
+                  info@example.com
+                </i>
+              </p>
+              <p>
+                <i href="#!" className="text-dark text-decoration-none">
+                  +57 313 662 3813
+                </i>
+              </p>
+            </div>
+            {/* Grid column */}
+          </div>
+        </div>
+      </section>
+      {/* Section: Links  */}
+
+      {/* Copyright */}
+      <div
+        className="text-center p-4"
+        style={{ backgroundColor: "rgba(255, 255, 255, 0.05)" }}
+      >
+        <span>© 2024 Derechos Reservados</span>
+      </div>
+      {/* Copyright */}
+    </footer>
   );
 };
 

@@ -64,7 +64,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className='flex flex-col items-center fixed top-0 z-10 w-full py-4 px-8 text-sm font-light bg-yellow-100'>
+      <nav className='flex flex-col items-center fixed top-0 z-10 w-full py-4 px-8 text-sm font-light' style={{ backgroundColor: "#EAD2AC " }}>
         <ul className='flex items-center gap-3'>
           <li>
             <NavLink to='/' className={({ isActive }) => (isActive ? activeStyle : notActiveStyle)}>

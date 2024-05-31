@@ -32,13 +32,13 @@ const Carousel = () => {
       </div>
       <div className="carousel-inner carousel-img-size">
         <div className="carousel-item active" data-bs-interval="3000">
-          <img src="mae-mu.jpg" className="d-block vw-100 vh-100" alt="..." />
+          <img src="mae-mu_2.jpg" className="d-block vw-100 vh-100" alt="..." />
         </div>
         <div className="carousel-item" data-bs-interval="3000">
-          <img src="nadya.jpg" className="d-block w-100 vh-100" alt="..." />
+          <img src="nadya_2.jpg" className="d-block vw-100 vh-100" alt="..." />
         </div>
         <div className="carousel-item" data-bs-interval="3000">
-          <img src="yeh.jpg" className="d-block w-100 vh-100" alt="..." />
+          <img src="yeh_2.jpg" className="d-block vw-100 vh-100" alt="..." />
         </div>
       </div>
       <button
