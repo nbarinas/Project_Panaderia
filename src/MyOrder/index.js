@@ -6,7 +6,7 @@ const MyOrder = () => {
 
   // Función para calcular el total a pagar
   const calcularTotal = () => {
-    return cartItems.reduce((total, item) => total + item.price, 0);
+    return cartItems.reduce((total, item) => total + item.precio, 0);
   };
 
   // Verifica si no hay elementos en el carrito y muestra un mensaje
@@ -21,10 +21,10 @@ const MyOrder = () => {
         {cartItems.map((item, index) => (
           <div key={index} className="flex items-center gap-2"> {/* Cada artículo en un contenedor flex */}
             <div style={{ marginLeft: '10%' }}> {/* Mueve los elementos un poco más hacia la derecha */}
-              <img src={item.image} alt={item.title} className="h-10 w-10 object-cover rounded-md" />
+              <img src={item.imagen} alt={item.name} className="h-10 w-10 object-cover rounded-md" />
             </div>
             <div>{item.title}</div> {/* Nombre del artículo */}
-            <div>${item.price}</div> {/* Precio del artículo */}
+            <div>${item.precio}</div> {/* Precio del artículo */}
           </div>
         ))}
       </div>
