@@ -66,39 +66,39 @@ const NavBar = () => {
     <>
       <nav className='flex flex-col items-center fixed top-0 z-10 w-full py-4 px-8 text-sm font-light' style={{ backgroundColor: "#EAD2AC " }}>
         <ul className='flex items-center gap-3'>
-          <li>
+          <li data-testid = "navbar-home">
             <NavLink to='/' className={({ isActive }) => (isActive ? activeStyle : notActiveStyle)}>
               Home
             </NavLink>
           </li>
-          <li>
+          <li data-testid = "navbar-sedes">
             <NavLink to='/Sedes' className={({ isActive }) => (isActive ? activeStyle : notActiveStyle)}>
               Sedes
             </NavLink>
           </li>
-          <li>
+          <li data-testid = "navbar-menu">
             <NavLink to='/Menu' className={({ isActive }) => (isActive ? activeStyle : notActiveStyle)}>
-              Menu
+              Menú
             </NavLink>
           </li>
-          <li>
+          <li data-testid = "navbar-orden">
             <NavLink to='/MyOrder' className={({ isActive }) => (isActive ? activeStyle : notActiveStyle)}>
               Tu Orden
             </NavLink>
-          </li>
+          </li >
           {usuarioRegistrado ? (
             <>
-              <li className="text-yellow-900">{usuarioRegistrado.email}</li>
+              <li data-testid = "navbar-registro" className="text-yellow-900">{usuarioRegistrado.email}</li>
               <li>
                 <button onClick={cerrarSesion} className="nav-link">Cerrar Sesión</button>
               </li>
             </>
           ) : (
-            <li>
+            <li data-testid = "navbar-registro">
               <button onClick={desplegaForm} className="nav-link">Registro</button>
             </li>
           )}
-          <li>
+          <li data-testid = "navbar-carrito">
             <span role="img" aria-label="Carrito">🛒</span> {cartItemCount} {/* Mostrar la cantidad de artículos en el carrito */}
           </li>
         </ul>
