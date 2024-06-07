@@ -1,6 +1,6 @@
 import React from "react";
-import { MdPadding } from "react-icons/md";
-import { TbBoxPadding } from "react-icons/tb";
+/*import { MdPadding } from "react-icons/md";
+import { TbBoxPadding } from "react-icons/tb";*/
 
 const Card = () => {
   const cardStyle = {
