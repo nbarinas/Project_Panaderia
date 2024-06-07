@@ -13,13 +13,13 @@ const Footer = () => {
       {/* Section: Social media */}
       <section
         className="p-4 border-bottom"
-        style={{ backgroundColor: "#ffffff", Height: "180px" }}
+        style={{ backgroundColor: "rgb(234, 210, 172)", Height: "180px" }}
       >
         {/* Left */}
         <div className="d-flex justify-content align-items  mb-4">
           <div className="me-4">
-            <span className="fw-bold fs-4" style={{ color: "#E1B16A" }}>
-              Siguenos en:
+            <span className="fw-bold fs-4" style={{ color: "#8B4513" }}>
+              Síguenos en:
             </span>
           </div>
           {/* Right */}

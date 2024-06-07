@@ -43,7 +43,7 @@ const Card = () => {
 
   return (
     <div
-      className="row row-cols-1 row-cols-md-3 g-4 mx-auto bg-light pb-3 pt-3"
+      className="row row-cols-1 row-cols-md-3 g-4 mx-auto pb-3 pt-3"
       style={rowStyle}
     >
       {[
