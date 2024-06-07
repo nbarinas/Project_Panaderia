@@ -14,6 +14,10 @@ describe('Pruebas sedes', () => {
             expect($li.eq(3)).to.contain('Salitre' );
             expect($li.eq(4)).to.contain('Bosa' )
         })
+    })
 
+    it('Valida los nombres de las sedes', () => {
+        cy.get(':nth-child(1) > .btn')
+        
     })
   })
