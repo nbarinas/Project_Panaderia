@@ -39,22 +39,22 @@ const Sedes = () => {
 
   return (
     <Layout>
-      <div className="container-fluid bg-light p-5">
+      <div className="container-fluid p-5">
         <h2 className="text-center mb-4" style={{ color: "#ff9900" }}>
           Nuestras Sedes
         </h2>
         <div className="row">
-          <div className="col-md-4 mb-4">
-            <ul className="list-group list-group-flush">
+          <div className="col-md-4 mb-4" >
+            <ul className="list-group list-group-flush" >
               {["Centro", "Chapinero", "Suba", "Salitre", "Bosa"].map(
                 (sede) => (
-                  <li key={sede} className="list-group-item">
+                  <li key={sede} className="list-group-item" style={{ backgroundColor: "rgb(234, 210, 172)"}}>
                     <button
                       onClick={() => cambiarUrl(sede)}
                       type="button"
-                      className="btn btn-outline-none w-100"
+                      className="btn btn-outline-none w-100 "
                       style={{
-                        backgroundColor: "#ffe5b4",
+                        backgroundColor: "rgb(254 243 199)",
                         color: "#333",
                         fontWeight: "bold",
                         padding: "10px",
