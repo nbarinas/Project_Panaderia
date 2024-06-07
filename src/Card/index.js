@@ -9,13 +9,14 @@ const Card = () => {
     boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
     transition: "transform 0.3s, box-shadow 0.3s",
     backgroundColor: "rgb(234, 210, 172)",
+    transform:"scale(1)"
   };
 
   const cardHoverStyle = {
     transform: "scale(1.05)",
     boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
   };
-
+  
   const cardBodyStyle = {
     padding: "20px",
     backgroundColor: "rgb(234, 210, 172)",

@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="bg-dark text-white text-center">
       {/* Section: Social media */}
       <section
-        className="p-4 border-bottom"
+        className="p-4"
         style={{ backgroundColor: "rgb(234, 210, 172)", Height: "180px" }}
       >
         {/* Left */}

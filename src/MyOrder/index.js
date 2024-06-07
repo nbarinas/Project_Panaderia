@@ -13,7 +13,7 @@ const MyOrder = () => {
   // Verifica si no hay elementos en el carrito y muestra un mensaje
   if (cartItems.length === 0) {
     return (
-      <div style={{ marginTop: "100px", textAlign: "center" }}>
+      <div style={{ paddingTop: "100px", textAlign: "center", backgroundColor: "rgb(234, 210, 172)" }}>
         No tienes nada agregado a tu orden.
       </div>
     );
@@ -21,7 +21,7 @@ const MyOrder = () => {
 
   return (
     <Layout>
-      <div style={{ marginTop: "80px" }}>
+      <div style={{ marginTop: "80px"}}>
         <h2 style={{ marginBottom: "10px" }}>Tu Orden</h2>
         <div className="flex flex-col gap-4">
           {" "}
