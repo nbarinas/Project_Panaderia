@@ -1,6 +1,9 @@
 describe('Proyecto final panadería', () => {
+  beforeEach(() => {
+    //Abre baseURL
+    cy.visit('/');
+  })
   it('Muestra todo los títulos del navbar', () => {
-    cy.visit('http://localhost:3000/');
     cy.get('[data-testid = "navbar-home"]').should("exist");   
     cy.get('[data-testid = "navbar-sedes"]').should("exist");
     cy.get('[data-testid = "navbar-menu"]').should("exist");
@@ -9,7 +12,6 @@ describe('Proyecto final panadería', () => {
     cy.get('[data-testid = "navbar-carrito"]').should("exist");
   })
   it('Validar título de la página', () => {
-    cy.visit('http://localhost:3000/');
     cy.get('[data-testid = "body-titulo"]').should("have.text", "LE GRENIER À PAIN");   
   })
 })
