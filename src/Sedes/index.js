@@ -39,8 +39,8 @@ const Sedes = () => {
 
   return (
     <Layout>
-      <div className="container-fluid p-5">
-        <h2 className="text-center mb-4" style={{ color: "#ff9900" }}>
+      <div className="container-fluid p-5 mt-8">
+        <h2 className="text-center mb-4" style={{ color: "rgb(139, 69, 19)" }}>
           Nuestras Sedes
         </h2>
         <div className="row">
